@@ -1,4 +1,5 @@
 import React from "react";
+import { MenuItem, MenuList } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -33,11 +34,20 @@ export default function ButtonAppBar() {
                         aria-label="menu"
                     >
                         <MenuIcon />
+                        {/* Route here? */}
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
-                        News
+                        Urban Ventures
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button
+                        color="inherit"
+                        // example event
+                        onClick={() => {
+                            console.log("onClick");
+                        }}
+                    >
+                        Login
+                    </Button>
                 </Toolbar>
             </AppBar>
         </div>
