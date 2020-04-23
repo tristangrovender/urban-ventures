@@ -1,11 +1,18 @@
 import { createMuiTheme } from "@material-ui/core/styles";
-import indigo from "@material-ui/core/colors/indigo";
 
 const theme = createMuiTheme({
     palette: {
-        primary: indigo,
+        primary: {
+            main: "#1a237e" // dark indigo
+            // light: "#757ce8",
+            // dark: "#002884",
+            // contrastText: "#fff"
+        },
         secondary: {
-            main: "#124116"
+            main: "#424242" // dark grey
+            // light: "#ff7961",
+            // dark: "#ba000d",
+            // contrastText: "#000"
         }
     }
 });

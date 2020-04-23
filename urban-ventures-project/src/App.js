@@ -1,16 +1,16 @@
 import React from "react";
-import ButtonAppBar from "./components/ButtonAppBar.js";
-
-import Home from "./views/Home.js";
+import { Paper } from "@material-ui/core";
+import Header from "./components/Header.js";
+import NavBar from "./components/navBar";
 
 import "./App.css";
 
 function App() {
     return (
-        <div className="app">
-            <ButtonAppBar />
-            <Home />
-        </div>
+        <Paper>
+            <Header />
+            <NavBar />
+        </Paper>
     );
 }
 
